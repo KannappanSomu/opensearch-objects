@@ -1,0 +1,20 @@
+apiVersion: opensearch.bakery.crossplane.io/v1alpha1
+kind: OpensearchRole
+metadata:
+  name: myownrole2
+  annotations:
+    crossplane.io/external-name: myownrole
+spec:
+  forProvider:
+    description: "My own role"
+    index_permissions:
+    - index_patterns:
+      - ".kibana_*"
+      allowed_actions:
+      - "indices_all"
+    cluster_permissions:
+    - permission_1
+    - permission_2
+    - permission_3  
+  providerConfigRef:
+    name: example
