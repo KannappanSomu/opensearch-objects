@@ -1,0 +1,11 @@
+apiVersion: opensearch.bakery.crossplane.io/v1alpha1
+kind: OpensearchTenant
+metadata:
+  name: tenant6
+  annotations:
+    crossplane.io/external-name: my_tenant6
+spec:
+  forProvider:
+    description: "My tenant nr 6."
+  providerConfigRef:
+    name: example
