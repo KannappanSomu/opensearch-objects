@@ -1,0 +1,11 @@
+apiVersion: opensearch.bakery.crossplane.io/v1alpha1
+kind: OpensearchTenant
+metadata:
+  name: my-argo-sourced-tenant
+  annotations:
+    crossplane.io/external-name: my_argo_tenant
+spec:
+  forProvider:
+    description: "My very own, argo and k8-sourced tenant."
+  providerConfigRef:
+    name: example
