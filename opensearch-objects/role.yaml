@@ -1,9 +1,9 @@
 apiVersion: opensearch.bakery.crossplane.io/v1alpha1
 kind: OpensearchRole
 metadata:
-  name: myownrole2
+  name: myownrole3
   annotations:
-    crossplane.io/external-name: myownrole
+    crossplane.io/external-name: myownrole3
 spec:
   forProvider:
     description: "My own role"
