@@ -3,7 +3,7 @@ kind: OpensearchTenant
 metadata:
   name: tenant7
   annotations:
-    crossplane.io/external-name: my_tenant7
+    crossplane.io/external-name: tenant7
 spec:
   forProvider:
     description: "My tenant nr 7."
