@@ -1,0 +1,16 @@
+apiVersion: opensearch.bakery.crossplane.io/v1alpha1
+kind: OpensearchRoleMapping
+metadata:
+  name: my-role-mapping2
+  annotations:
+    crossplane.io/external-name: myownrole2
+spec:
+  forProvider:
+    hosts:
+    - "*.valve.com"
+    users:
+    - "*"
+    backend_roles:
+    - "readall"
+  providerConfigRef:
+    name: example
